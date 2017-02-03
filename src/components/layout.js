@@ -1,8 +1,8 @@
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react';
 
 class Layout extends Component {
   constructor(props) {
-    super(props)
+    super(props);
   }
 
   render() {
@@ -15,4 +15,4 @@ class Layout extends Component {
 }
 
 
-export default Layout
+export default Layout;

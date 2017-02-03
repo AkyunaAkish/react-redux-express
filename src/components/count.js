@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 class Count extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (
@@ -12,10 +15,10 @@ class Count extends Component {
   }
 }
 
-function mapStateToProps(rootReducer) {
+function mapStateToProps(state) {
   return {
-    number: rootReducer.number_reducer.number
-  }
+    number: state.number_reducer.number
+  };
 }
 
-export default connect(mapStateToProps)(Count)
+export default connect(mapStateToProps)(Count);

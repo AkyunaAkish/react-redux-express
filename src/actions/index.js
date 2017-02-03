@@ -1,10 +1,10 @@
 import {
     ADD_NUMBER
-} from './types'
+} from './types';
 
 export function addNumber() {
     return {
         type: ADD_NUMBER,
         payload: 1
-    }
+    };
 }
